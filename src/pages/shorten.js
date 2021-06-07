@@ -14,6 +14,7 @@ const Shorten = ({loading,isloading,ispending,errmsg,inputHandler,shorturlHandle
             placeholder="Shorten a link here..."
             value={longnurl}
             onChange={inputHandler}
+            required
           />
           {!ispending ? (
             <button type="submit">Shorten It!</button>
